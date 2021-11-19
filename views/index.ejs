@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Welcome</title>
+    <style type="text/css">
+#nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;  
+  overflow: hidden;
+  border: 1px solid #0099ff;
+  background-color:#0099ff;
+  border-radius: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color:white;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    color: white;
+  background-color: #4CAF50;
+}
+
+li a.active {
+  color: white;
+  background-color: #ff3300;
+
+}
+
+body {
+    background-color:  #f2f2f2;
+}
+        h1 {
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 36px;
+            color: #0099ff;
+        }
+        
+        h2 {
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 26px;
+            color: #0099ff;
+        }
+    
+        li {
+            color: #333333;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    
+        p {
+            color: #333333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        hr {
+
+border: 1px solid #ff3300;
+
+        }
+    
+        #students {
+    
+               background-color: #ecf5ff;
+               width: 400px;
+               margin: 50px 100px 100px 400px;
+               border-radius: 10%;
+               border-color: #0099ff;
+               float: left;
+            }
+    
+        #tutors {
+            
+                background-color: #ecf5ff;
+                width: 400px;
+                margin: 50px 100px 100px 100px;  
+                border-radius: 10%;
+                border-color: #0099ff;
+                float: left;
+            }
+
+        .form { 
+           background-color: #ecf5ff;
+           font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           font-size: 20px;
+           color:#333333;
+           width: 330px;
+           margin: 100px 100px 100px 100px;
+           border-radius: 10%;
+           border-color: #0099ff;
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul id=nav>
+          <li><a href="/">Home</a></li>
+          <li> <a class="active" href="studentWelcome">Student Welcome</a></li>
+          <li><a href="studentProfile">See Profile</a></li>
+          <li><a href="searchTutors">Search Tutors</a></li>
+          <li><a href="requestTutoringSession">Request Tutoring Session</a></li>
+          <li><a href="reviewATutor">Write a Review</a></li>
+          <li><a href="studentSessionHistory">See Session History</a></li>
+        </ul>
+        </nav>  
+<div align=center>  <h1 align=center>2TR-NOW</h1>
+    <h2 align=center>Welcome <%= name%>!<br>What Do You Want To Do?</h2>
+</div>
+
+<form action="/logout?_method=DELETE" method="POST" align="center">
+    <button type="submit">Log Out</button>
+</form>
+
+<hr>
+
+<div align=center>
+    <tbody>
+        <table>
+      <tr><td colspan="2" style="padding:5px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align:center; float:bottom">
+        <p style=color:#333333>Copyright &copy; Nancy Jane Bullis All Rights Reserved</p>
+        <p style=color:#333333><a href="privacypolicy">Privacy Policy</a></p>
+        <p style=color:#333333><a href="disclaimer">Disclaimer</a></p>
+        </td></tr>
+      </table>
+      </tbody>
+</div>
+</body>
+</html>
